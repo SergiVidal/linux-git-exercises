@@ -10,8 +10,8 @@ cp nginx_logs_examples.log "${DIR}/nginx_log_requests$(date '+_%Y%m%d').${FILENA
 
 TAR_FILENAME="nginx_logs$(date '+_%Y%m%d').tar.gz"
 
-if [[ $(date +%u) -eq 1 ]]; then
-    tar -cf "${TAR_FILENAME}" -T /dev/null
+if [[ $(date +%u) -eq 7 ]]; then
+    tar -cf "${TAR_FILENAME}" "${DIR}/nginx_log_requests$(date '+_%Y%m%d').${FILENAME##*.}"
 
     for i in {1..6}
     do
