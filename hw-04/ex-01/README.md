@@ -1,7 +1,3 @@
-# Questions
-
-## 1. 
-
 ```console
 curl -o nginx_logs_examples.log https://raw.githubusercontent.com/elastic/examples/master/Common%20Data%20Formats/nginx_logs/nginx_logs
 
